@@ -95,5 +95,5 @@ Output:
 */
 
 export function makeArrayOfArraysOfArrays(arr) {
-    return [];
+    return arr.map(item => ([['name', item.name], ['type', item.type]]));
 }
