@@ -7,7 +7,7 @@ import {
 
 const { test, skip } = QUnit;
 
-skip('should make an array of names', (expect) => {
+test('should make an array of names', (expect) => {
     const pets = [
         {
             type: 'cat',
