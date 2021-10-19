@@ -6,7 +6,7 @@ import {
     listNamesOfAllFruits
 } from '../filter-find.js';
 
-const { test, skip } = QUnit;
+const { test } = QUnit;
 
 const groceries = [
     { 

@@ -5,9 +5,9 @@ import {
     makeSpanishLanguageArray,
 } from '../for-each.js';
 
-const { test, skip } = QUnit;
+const { test } = QUnit;
 
-skip('should make an array of names', (expect) => {
+test('should make an array of names', (expect) => {
     const pets = [
         {
             type: 'cat',
@@ -31,7 +31,7 @@ skip('should make an array of names', (expect) => {
     expect.deepEqual(actual, expected);
 });
 
-skip('should make a reverse array of type', (expect) => {
+test('should make a reverse array of type', (expect) => {
     const pets = [
         {
             type: 'cat',
@@ -55,7 +55,7 @@ skip('should make a reverse array of type', (expect) => {
     expect.deepEqual(actual, expected);
 });
 
-skip('should make a spanish array of pet objects', (expect) => {
+test('should make a spanish array of pet objects', (expect) => {
     const pets = [
         {
             type: 'cat',
