@@ -31,11 +31,11 @@ Output:
 */
 
 export function makeReversedArrayOfTypes(arr) {
-    const petNames = [];
+    const petType = [];
     arr.forEach(pet => {
-        petNames.push(pet.type);
+        petType.push(pet.type);
     });
-    return petNames.reverse();
+    return petType.reverse();
 }
 
 /*
@@ -50,6 +50,10 @@ Output:
 */
 
 export function makeSpanishLanguageArray(arr) {
-    return [];
+    let spanish = [];
+    arr.forEach(pet => {
+        spanish.push({ nombre: `${pet.name}`, tipo: `${pet.type}` });
+    });
+    return spanish;
 }
 
