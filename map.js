@@ -67,7 +67,9 @@ Output:
 */
 
 export function makeStringArray(arr) {
-    return [];
+    let string = [];
+    arr.map(pet => string.push(`${pet.name}${pet.type}`));
+    return string;
 }
 
 /*
